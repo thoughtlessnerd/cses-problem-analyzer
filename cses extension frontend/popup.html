@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script
-        self
-        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.0/chart.js"
-        integrity="sha512-ohOeYvGoLlCxYkfMoPBKJh/wp4Oe76rEJDWOmQq1LLrJD6yCBSPVmhhXuZYvuxdYR3PiozsUf+TZZ6yhVBGYAQ=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    ></script>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="popup.css" />
-    </head>
-    <body>
-        <h1>A Code Daily</h1>
-        <!-- <button id="click">Click</button> -->
-        <div class="solvedProblemCount">You have solved 3 problems</div>
-        <div class="solvedProblemWheel">
-            <canvas id="chart" width="150px" height="150px"></canvas>
-        </div>
-    </body>
-    <script src="popup.js"></script>
-    <script src="pieChart.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>A Code Daily</h1>
+    <!-- <button id="click">Click</button> -->
+    <div class="solvedProblemCount"></div>
+    <div class="solvedProblemWheel">
+      <canvas id="chart" width="150px" height="150px"></canvas>
+    </div>
+  </body>
+  <script defer src="popup.js"></script>
+  <script src="pieChart.js" defer></script>
 </html>

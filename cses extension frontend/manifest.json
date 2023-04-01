@@ -1,30 +1,27 @@
 {
-    "name": "cses problem analyser",
-    "version": "0.1.0",
-    "description": "Analyze the problem difficulty of CSES",
-    "permissions": ["storage", "tabs"],
-    "host_permissions": ["https://*.cses.fi/problemset/*"],
-    "background": {
-        "service_worker": "background.js"
-    },
-    "content_scripts": [
-        {
-            "js": [
-                "popup.js",
-                "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.0/chart.js"
-            ],
-            "matches": ["http://*/*", "https://*/*"]
-        }
-    ],
+  "name": "CSES problem analyzer",
+  "version": "0.1.0",
+  "description": "cses problem analyzer",
+  "permissions": ["storage", "tabs", "history"],
+  "host_permissions": ["https://*.cses.fi/problemset/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.cses.fi/problemset/*"],
+      "js": ["popup.js", "content.js"]
+    }
+  ],
 
-    "action": {
-        "default_icon": {
-            "16": "images/pic.png",
-            "24": "images/pic.png",
-            "32": "images/pic.png"
-        },
-        "default_title": "cses problem analyser",
-        "default_popup": "popup.html"
+  "action": {
+    "default_icon": {
+      "16": "images/pic.png",
+      "24": "images/pic.png",
+      "32": "images/pic.png"
     },
-    "manifest_version": 3
+    "default_title": "CSES problem analyzer",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
 }

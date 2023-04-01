@@ -3,6 +3,7 @@ class CSES {
   computeRating() {
     let problems;
     problems = document.querySelectorAll("[href*='/problemset/task/']");
+    console.log("problems");
 
     for (let i = 0; i < problems.length; i++) {
       let rating = "1200"; // this would come from API
