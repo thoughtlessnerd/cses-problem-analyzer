@@ -1,7 +1,6 @@
 let problems;
 let solvedProblems = 0;
 problems = document.querySelectorAll("[href*='/problemset/task/']");
-console.log("problems");
 for (let i = 0; i < problems.length; i++) {
   if (
     problems[i].nextElementSibling.nextElementSibling.classList.contains("full")

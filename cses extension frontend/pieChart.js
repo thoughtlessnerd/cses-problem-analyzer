@@ -1,5 +1,5 @@
 var values = [0];
-var barColors = ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145"];
+var barColors = ["#FA0F62", "#0CE80C"];
 
 const canvas = document.getElementById("chart");
 const ctx = canvas.getContext("2d");
